@@ -1,0 +1,24 @@
+PROGRAM program0
+  VAR
+    PB1 : BOOL;
+    PB2 : BOOL;
+    LED : BOOL;
+  END_VAR
+
+  IF PB1 THEN
+    LED := TRUE;
+  END_IF;
+
+  IF PB2 THEN
+    LED := FALSE;
+  END_IF;
+END_PROGRAM
+
+
+CONFIGURATION Config0
+
+  RESOURCE Res0 ON PLC
+    TASK task0(INTERVAL := T#20ms,PRIORITY := 0);
+    PROGRAM instance0 WITH task0 : program0;
+  END_RESOURCE
+END_CONFIGURATION
