@@ -1,31 +1,33 @@
 
 PROGRAM program0
   VAR
-    Var233 : BOOL;
-    Var666 : BOOL;
-    Var42 : BOOL;
+        Var90 : BOOL;
+        Var57 : BOOL;
+        Var15 : BOOL;
+
   END_VAR
   
 
-FOR Var42 TO (Var233 - Var42) / 9 * Var42 DO
-  
-IF Var666 THEN  
+IF 3   = Var90      THEN  
     
-FOR Var233 TO Var42 DO
-  Var42 := Var42;
+WHILE Var57       DO
+    EXIT;
+EXIT;
 
+END_WHILE;
+Var15 := Var57      
 
-END_FOR;
+;
 
-ELSIF Var666 THEN
-    Var42 := Var666;
+ELSIF Var90     XOR Var57     OR Var90      THEN
+    EXIT;
+EXIT;
+EXIT;
 
-
+ELSE
+    EXIT;
 
 END_IF;
 
-END_FOR;
 
-
-END_PROGRAM;
-
+END_PROGRAM
